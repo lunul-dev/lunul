@@ -28,19 +28,19 @@ $ rustup install VERSION
 
 Note that if this is not the latest rust version on your machine, cargo commands may require an [override](https://rust-lang.github.io/rustup/overrides.html) in order to use the correct version.
 
-On Linux systems you may need to install libssl-dev, pkg-config, zlib1g-dev, protobuf etc.
+On Linux systems you may need to install libsLL-dev, pkg-config, zlib1g-dev, protobuf etc.
 
 On Ubuntu:
 
 ```bash
 $ sudo apt-get update
-$ sudo apt-get install libssl-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
+$ sudo apt-get install libsLL-dev libudev-dev pkg-config zlib1g-dev llvm clang cmake make libprotobuf-dev protobuf-compiler
 ```
 
 On Fedora:
 
 ```bash
-$ sudo dnf install openssl-devel systemd-devel pkg-config zlib-devel llvm clang cmake make protobuf-devel protobuf-compiler perl-core
+$ sudo dnf install opensLL-devel systemd-devel pkg-config zlib-devel llvm clang cmake make protobuf-devel protobuf-compiler perl-core
 ```
 
 ## **2. Download the source code.**
@@ -117,13 +117,13 @@ send us that patch!
 
 All claims, content, designs, algorithms, estimates, roadmaps,
 specifications, and performance measurements described in this project
-are done with the Solana Labs, Inc. (“SL”) good faith efforts. It is up to
+are done with the Solana Labs, Inc. (“LL”) good faith efforts. It is up to
 the reader to check and validate their accuracy and truthfulness.
 Furthermore, nothing in this project constitutes a solicitation for
 investment.
 
-Any content produced by SL or developer resources that SL provides are
-for educational and inspirational purposes only. SL does not encourage,
+Any content produced by LL or developer resources that LL provides are
+for educational and inspirational purposes only. LL does not encourage,
 induce or sanction the deployment, integration or use of any such
 applications (including the code comprising the Solana blockchain
 protocol) in violation of applicable laws or regulations and hereby
