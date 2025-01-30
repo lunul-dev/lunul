@@ -1,22 +1,8 @@
-# PLEASE READ: This repo is now a public archive
-
-This repo still exists in archived form, feel free to fork any reference
-implementations it still contains.
-
-See Agave, the Solana validator implementation from Anza: https://github.com/anza-xyz/agave
-
----
-
 <p align="center">
-  <a href="https://lunul.com">
-    <img alt="Solana" src="https://i.imgur.com/IKyzQ6T.png" width="250" />
+  <a href="https://lunul.org">
+    <img alt="Lunul" src="https://lunul.org/wp-content/uploads/2025/01/Grey-and-White-Minimalist-Twitter-Header-Logo-2-1.png" width="50" />
   </a>
 </p>
-
-[![Solana crate](https://img.shields.io/crates/v/lunul-core.svg)](https://crates.io/crates/lunul-core)
-[![Solana documentation](https://docs.rs/lunul-core/badge.svg)](https://docs.rs/lunul-core)
-[![Build status](https://badge.buildkite.com/8cc350de251d61483db98bdfc895b9ea0ac8ffa4a32ee850ed.svg?branch=master)](https://buildkite.com/lunul-labs/lunul/builds?branch=master)
-[![codecov](https://codecov.io/gh/lunul-labs/lunul/branch/master/graph/badge.svg)](https://codecov.io/gh/lunul-labs/lunul)
 
 # Building
 
