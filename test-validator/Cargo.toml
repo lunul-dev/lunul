@@ -1,5 +1,5 @@
 [package]
-name = "solana-test-validator"
+name = "lunul-test-validator"
 description = "Blockchain, Rebuilt for Scale"
 readme = "../README.md"
 version = { workspace = true }
@@ -16,23 +16,23 @@ crossbeam-channel = { workspace = true }
 log = { workspace = true }
 serde_derive = { workspace = true }
 serde_json = { workspace = true }
-solana-accounts-db = { workspace = true }
-solana-cli-output = { workspace = true }
-solana-client = { workspace = true }
-solana-core = { workspace = true }
-solana-geyser-plugin-manager = { workspace = true }
-solana-gossip = { workspace = true }
-solana-ledger = { workspace = true }
-solana-logger = { workspace = true }
-solana-net-utils = { workspace = true }
-solana-program-runtime = { workspace = true }
-solana-program-test = { workspace = true }
-solana-rpc = { workspace = true }
-solana-rpc-client = { workspace = true }
-solana-runtime = { workspace = true }
-solana-sdk = { workspace = true }
-solana-streamer = { workspace = true }
-solana-tpu-client = { workspace = true }
+lunul-accounts-db = { workspace = true }
+lunul-cli-output = { workspace = true }
+lunul-client = { workspace = true }
+lunul-core = { workspace = true }
+lunul-geyser-plugin-manager = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-ledger = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-net-utils = { workspace = true }
+lunul-program-runtime = { workspace = true }
+lunul-program-test = { workspace = true }
+lunul-rpc = { workspace = true }
+lunul-rpc-client = { workspace = true }
+lunul-runtime = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-tpu-client = { workspace = true }
 tokio = { workspace = true, features = ["full"] }
 
 [package.metadata.docs.rs]

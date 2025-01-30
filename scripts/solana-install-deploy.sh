@@ -26,7 +26,7 @@ if [[ -z $URL || -z $TAG ]]; then
 fi
 
 if [[ ! -f update_manifest_keypair.json ]]; then
-  "$SOLANA_ROOT"/scripts/solana-install-update-manifest-keypair.sh "$OS"
+  "$SOLANA_ROOT"/scripts/lunul-install-update-manifest-keypair.sh "$OS"
 fi
 
 case "$OS" in
@@ -46,7 +46,7 @@ esac
 
 case $URL in
 stable)
-  URL=http://api.devnet.solana.com
+  URL=http://api.devnet.lunul.com
   ;;
 localhost)
   URL=http://localhost:8899
@@ -57,10 +57,10 @@ esac
 
 case $TAG in
 edge|beta)
-  DOWNLOAD_URL=https://release.solana.com/"$TAG"/solana-release-$TARGET.tar.bz2
+  DOWNLOAD_URL=https://release.lunul.com/"$TAG"/lunul-release-$TARGET.tar.bz2
   ;;
 *)
-  DOWNLOAD_URL=https://github.com/solana-labs/solana/releases/download/"$TAG"/solana-release-$TARGET.tar.bz2
+  DOWNLOAD_URL=https://github.com/lunul-labs/lunul/releases/download/"$TAG"/lunul-release-$TARGET.tar.bz2
   ;;
 esac
 
@@ -69,11 +69,11 @@ PATH="$SOLANA_ROOT"/target/debug:$PATH
 
 set -x
 # shellcheck disable=SC2086 # Don't want to double quote $maybeKeypair
-balance=$(solana $maybeKeypair --url "$URL" balance --lamports)
+balance=$(lunul $maybeKeypair --url "$URL" balance --lamports)
 if [[ $balance = "0 lamports" ]]; then
   # shellcheck disable=SC2086 # Don't want to double quote $maybeKeypair
-  solana $maybeKeypair --url "$URL" airdrop 0.000000042
+  lunul $maybeKeypair --url "$URL" airdrop 0.000000042
 fi
 
 # shellcheck disable=SC2086 # Don't want to double quote $maybeKeypair
-solana-install deploy $maybeKeypair --url "$URL" "$DOWNLOAD_URL" update_manifest_keypair.json
+lunul-install deploy $maybeKeypair --url "$URL" "$DOWNLOAD_URL" update_manifest_keypair.json

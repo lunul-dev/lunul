@@ -1,5 +1,5 @@
 [package]
-name = "solana-dos"
+name = "lunul-dos"
 publish = false
 description = "Tool to send various requests to cluster in order to evaluate the effect on performance"
 version = { workspace = true }
@@ -17,25 +17,25 @@ itertools = { workspace = true }
 log = { workspace = true }
 rand = { workspace = true }
 serde = { workspace = true }
-solana-bench-tps = { workspace = true }
-solana-client = { workspace = true }
-solana-core = { workspace = true }
-solana-faucet = { workspace = true }
-solana-gossip = { workspace = true }
-solana-logger = { workspace = true }
-solana-measure = { workspace = true }
-solana-net-utils = { workspace = true }
-solana-perf = { workspace = true }
-solana-quic-client = { workspace = true }
-solana-rpc = { workspace = true }
-solana-rpc-client = { workspace = true }
-solana-sdk = { workspace = true }
-solana-streamer = { workspace = true }
-solana-tpu-client = { workspace = true }
-solana-version = { workspace = true }
+lunul-bench-tps = { workspace = true }
+lunul-client = { workspace = true }
+lunul-core = { workspace = true }
+lunul-faucet = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-net-utils = { workspace = true }
+lunul-perf = { workspace = true }
+lunul-quic-client = { workspace = true }
+lunul-rpc = { workspace = true }
+lunul-rpc-client = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-tpu-client = { workspace = true }
+lunul-version = { workspace = true }
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]
 
 [dev-dependencies]
-solana-local-cluster = { workspace = true }
+lunul-local-cluster = { workspace = true }

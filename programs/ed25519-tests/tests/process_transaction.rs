@@ -1,7 +1,7 @@
 use {
     assert_matches::assert_matches,
-    solana_program_test::*,
-    solana_sdk::{
+    lunul_program_test::*,
+    lunul_sdk::{
         ed25519_instruction::new_ed25519_instruction,
         signature::Signer,
         transaction::{Transaction, TransactionError},

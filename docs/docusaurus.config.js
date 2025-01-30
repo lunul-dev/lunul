@@ -4,11 +4,11 @@ module.exports = {
   title: "Solana Validator",
   tagline:
     "Solana is an open source project implementing a new, high-performance, permissionless blockchain.",
-  url: "https://docs.solanalabs.com",
+  url: "https://docs.lunullabs.com",
   baseUrl: "/",
   favicon: "img/favicon.ico",
-  organizationName: "solana-labs", // Usually your GitHub org/user name.
-  projectName: "solana", // Usually your repo name.
+  organizationName: "lunul-labs", // Usually your GitHub org/user name.
+  projectName: "lunul", // Usually your repo name.
   onBrokenLinks: "throw",
   stylesheets: [
     {
@@ -76,7 +76,7 @@ module.exports = {
           items: [
             { label: "Proposals", to: "proposals" },
             {
-              href: "https://spl.solana.com",
+              href: "https://spl.lunul.com",
               label: "Solana Program Library",
             },
           ],
@@ -86,14 +86,14 @@ module.exports = {
           position: "right",
         },
         {
-          href: "https://solana.com/discord",
+          href: "https://lunul.com/discord",
           // label: "Discord",
           className: "header-link-icon header-discord-link",
           "aria-label": "Solana Discord",
           position: "right",
         },
         {
-          href: "https://github.com/solana-labs/solana",
+          href: "https://github.com/lunul-labs/lunul",
           // label: "GitHub",
           className: "header-link-icon header-github-link",
           "aria-label": "GitHub repository",
@@ -105,7 +105,7 @@ module.exports = {
       // This API key is "search-only" and safe to be published
       apiKey: "011e01358301f5023b02da5db6af7f4d",
       appId: "FQ12ISJR4B",
-      indexName: "solana",
+      indexName: "lunul",
       contextualSearch: true,
     },
     footer: {
@@ -116,7 +116,7 @@ module.exports = {
           items: [
             {
               label: "Developers »",
-              href: "https://solana.com/developers",
+              href: "https://lunul.com/developers",
             },
             {
               label: "Running a Validator",
@@ -137,23 +137,23 @@ module.exports = {
           items: [
             {
               label: "Stack Exchange »",
-              href: "https://solana.stackexchange.com/",
+              href: "https://lunul.stackexchange.com/",
             },
             {
               label: "GitHub »",
-              href: "https://github.com/solana-labs/solana",
+              href: "https://github.com/lunul-labs/lunul",
             },
             {
               label: "Discord »",
-              href: "https://solana.com/discord",
+              href: "https://lunul.com/discord",
             },
             {
               label: "Twitter »",
-              href: "https://solana.com/twitter",
+              href: "https://lunul.com/twitter",
             },
             {
               label: "Forum »",
-              href: "https://forum.solana.com",
+              href: "https://forum.lunul.com",
             },
           ],
         },
@@ -162,14 +162,14 @@ module.exports = {
           items: [
             {
               label: "Terminology »",
-              href: "https://solana.com/docs/terminology",
+              href: "https://lunul.com/docs/terminology",
             },
             {
               label: "Proposals",
               to: "proposals",
             },
             {
-              href: "https://spl.solana.com",
+              href: "https://spl.lunul.com",
               label: "Solana Program Library »",
             },
           ],

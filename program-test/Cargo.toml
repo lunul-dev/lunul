@@ -1,6 +1,6 @@
 [package]
 description = "Solana Program Test Framework"
-name = "solana-program-test"
+name = "lunul-program-test"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -17,21 +17,21 @@ chrono-humanize = { workspace = true }
 crossbeam-channel = { workspace = true }
 log = { workspace = true }
 serde = { workspace = true }
-solana-accounts-db = { workspace = true }
-solana-banks-client = { workspace = true }
-solana-banks-interface = { workspace = true }
-solana-banks-server = { workspace = true }
-solana-bpf-loader-program = { workspace = true }
-solana-logger = { workspace = true }
-solana-program-runtime = { workspace = true }
-solana-runtime = { workspace = true }
-solana-sdk = { workspace = true }
-solana-svm = { workspace = true }
-solana-vote-program = { workspace = true }
-solana_rbpf = { workspace = true }
+lunul-accounts-db = { workspace = true }
+lunul-banks-client = { workspace = true }
+lunul-banks-interface = { workspace = true }
+lunul-banks-server = { workspace = true }
+lunul-bpf-loader-program = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-program-runtime = { workspace = true }
+lunul-runtime = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-svm = { workspace = true }
+lunul-vote-program = { workspace = true }
+lunul_rbpf = { workspace = true }
 test-case = { workspace = true }
 thiserror = { workspace = true }
 tokio = { workspace = true, features = ["full"] }
 
 [dev-dependencies]
-solana-stake-program = { workspace = true }
+lunul-stake-program = { workspace = true }

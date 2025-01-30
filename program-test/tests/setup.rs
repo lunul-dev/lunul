@@ -1,6 +1,6 @@
 use {
-    solana_program_test::ProgramTestContext,
-    solana_sdk::{
+    lunul_program_test::ProgramTestContext,
+    lunul_sdk::{
         pubkey::Pubkey,
         rent::Rent,
         signature::{Keypair, Signer},
@@ -11,7 +11,7 @@ use {
         system_instruction, system_program,
         transaction::Transaction,
     },
-    solana_vote_program::{
+    lunul_vote_program::{
         vote_instruction,
         vote_state::{self, VoteInit, VoteState},
     },

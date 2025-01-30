@@ -1,8 +1,8 @@
 use {
     assert_matches::assert_matches,
-    solana_banks_client::BanksClientError,
-    solana_program_test::{processor, ProgramTest},
-    solana_sdk::{
+    lunul_banks_client::BanksClientError,
+    lunul_program_test::{processor, ProgramTest},
+    lunul_sdk::{
         account_info::{next_account_info, AccountInfo},
         commitment_config::CommitmentLevel,
         entrypoint::ProgramResult,

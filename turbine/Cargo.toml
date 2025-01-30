@@ -1,7 +1,7 @@
 [package]
-name = "solana-turbine"
+name = "lunul-turbine"
 description = "Blockchain, Rebuilt for Scale"
-documentation = "https://docs.rs/solana-turbine"
+documentation = "https://docs.rs/lunul-turbine"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -22,27 +22,27 @@ rand = { workspace = true }
 rand_chacha = { workspace = true }
 rayon = { workspace = true }
 rustls = { workspace = true }
-solana-entry = { workspace = true }
-solana-gossip = { workspace = true }
-solana-ledger = { workspace = true }
-solana-measure = { workspace = true }
-solana-metrics = { workspace = true }
-solana-perf = { workspace = true }
-solana-poh = { workspace = true }
-solana-quic-client = { workspace = true }
-solana-rayon-threadlimit = { workspace = true }
-solana-rpc = { workspace = true }
-solana-rpc-client-api = { workspace = true }
-solana-runtime = { workspace = true }
-solana-sdk = { workspace = true }
-solana-streamer = { workspace = true }
+lunul-entry = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-ledger = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-metrics = { workspace = true }
+lunul-perf = { workspace = true }
+lunul-poh = { workspace = true }
+lunul-quic-client = { workspace = true }
+lunul-rayon-threadlimit = { workspace = true }
+lunul-rpc = { workspace = true }
+lunul-rpc-client-api = { workspace = true }
+lunul-runtime = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-streamer = { workspace = true }
 thiserror = { workspace = true }
 tokio = { workspace = true }
 
 [dev-dependencies]
 assert_matches = { workspace = true }
-solana-logger = { workspace = true }
-solana-runtime = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-logger = { workspace = true }
+lunul-runtime = { workspace = true, features = ["dev-context-only-utils"] }
 test-case = { workspace = true }
 
 [[bench]]

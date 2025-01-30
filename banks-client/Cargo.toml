@@ -1,7 +1,7 @@
 [package]
-name = "solana-banks-client"
+name = "lunul-banks-client"
 description = "Solana banks client"
-documentation = "https://docs.rs/solana-banks-client"
+documentation = "https://docs.rs/lunul-banks-client"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -12,21 +12,21 @@ edition = { workspace = true }
 [dependencies]
 borsh = { workspace = true }
 futures = { workspace = true }
-solana-banks-interface = { workspace = true }
-solana-program = { workspace = true }
-solana-sdk = { workspace = true }
+lunul-banks-interface = { workspace = true }
+lunul-program = { workspace = true }
+lunul-sdk = { workspace = true }
 tarpc = { workspace = true, features = ["full"] }
 thiserror = { workspace = true }
 tokio = { workspace = true, features = ["full"] }
 tokio-serde = { workspace = true, features = ["bincode"] }
 
 [dev-dependencies]
-solana-banks-server = { workspace = true }
-solana-runtime = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-banks-server = { workspace = true }
+lunul-runtime = { workspace = true, features = ["dev-context-only-utils"] }
 
 [lib]
 crate-type = ["lib"]
-name = "solana_banks_client"
+name = "lunul_banks_client"
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]

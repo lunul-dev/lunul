@@ -1,7 +1,7 @@
 use {
     crate::optimistically_confirmed_bank_tracker::OptimisticallyConfirmedBank,
-    solana_ledger::blockstore::Blockstore,
-    solana_sdk::clock::Slot,
+    lunul_ledger::blockstore::Blockstore,
+    lunul_sdk::clock::Slot,
     std::sync::{
         atomic::{AtomicBool, Ordering},
         Arc, RwLock,
@@ -136,12 +136,12 @@ impl RpcHealth {
 pub mod tests {
     use {
         super::*,
-        solana_ledger::{
+        lunul_ledger::{
             genesis_utils::{create_genesis_config, GenesisConfigInfo},
             get_tmp_ledger_path_auto_delete,
         },
-        solana_runtime::{bank::Bank, bank_forks::BankForks},
-        solana_sdk::{clock::UnixTimestamp, hash::Hash, pubkey::Pubkey},
+        lunul_runtime::{bank::Bank, bank_forks::BankForks},
+        lunul_sdk::{clock::UnixTimestamp, hash::Hash, pubkey::Pubkey},
     };
 
     #[test]

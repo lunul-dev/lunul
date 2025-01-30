@@ -1,5 +1,5 @@
 [package]
-name = "solana-zk-keygen"
+name = "lunul-zk-keygen"
 description = """
 Solana privacy-related key generation utility
 
@@ -20,12 +20,12 @@ bs58 = { workspace = true }
 clap = { version = "3.1.5", features = ["cargo", "derive"] }
 dirs-next = { workspace = true }
 num_cpus = { workspace = true }
-solana-clap-v3-utils = { workspace = true }
-solana-cli-config = { workspace = true }
-solana-remote-wallet = { workspace = true, features = ["default"] }
-solana-sdk = { workspace = true }
-solana-version = { workspace = true }
-solana-zk-token-sdk = { workspace = true }
+lunul-clap-v3-utils = { workspace = true }
+lunul-cli-config = { workspace = true }
+lunul-remote-wallet = { workspace = true, features = ["default"] }
+lunul-sdk = { workspace = true }
+lunul-version = { workspace = true }
+lunul-zk-token-sdk = { workspace = true }
 thiserror = { workspace = true }
 tiny-bip39 = { workspace = true }
 
@@ -33,7 +33,7 @@ tiny-bip39 = { workspace = true }
 tempfile = { workspace = true }
 
 [[bin]]
-name = "solana-zk-keygen"
+name = "lunul-zk-keygen"
 path = "src/main.rs"
 
 [package.metadata.docs.rs]

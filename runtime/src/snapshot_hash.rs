@@ -1,7 +1,7 @@
 //! Helper types and functions for handling and dealing with snapshot hashes.
 use {
-    solana_accounts_db::{accounts_hash::AccountsHashKind, epoch_accounts_hash::EpochAccountsHash},
-    solana_sdk::{
+    lunul_accounts_db::{accounts_hash::AccountsHashKind, epoch_accounts_hash::EpochAccountsHash},
+    lunul_sdk::{
         clock::Slot,
         hash::{Hash, Hasher},
     },

@@ -1,22 +1,22 @@
 #![cfg(feature = "test-bpf")]
 
 use {
-    solana_program::{
+    lunul_program::{
         instruction::{AccountMeta, Instruction},
         pubkey::Pubkey,
         sysvar,
     },
-    solana_sdk::{signature::Signer, transaction::Transaction},
-    solana_validator::test_validator::*,
+    lunul_sdk::{signature::Signer, transaction::Transaction},
+    lunul_validator::test_validator::*,
 };
 
 #[test]
 fn no_panic_rpc_client() {
-    solana_logger::setup_with_default("solana_program_runtime=debug");
+    lunul_logger::setup_with_default("lunul_program_runtime=debug");
     let program_id = Pubkey::new_unique();
 
     let (test_validator, payer) = TestValidatorGenesis::default()
-        .add_program("solana_sbf_rust_simulation", program_id)
+        .add_program("lunul_sbf_rust_simulation", program_id)
         .start();
     let rpc_client = test_validator.get_rpc_client();
     let blockhash = rpc_client.get_latest_blockhash().unwrap();

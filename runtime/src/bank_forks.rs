@@ -10,9 +10,9 @@ use {
         snapshot_config::SnapshotConfig,
     },
     log::*,
-    solana_measure::measure::Measure,
-    solana_program_runtime::loaded_programs::{BlockRelation, ForkGraph},
-    solana_sdk::{
+    lunul_measure::measure::Measure,
+    lunul_program_runtime::loaded_programs::{BlockRelation, ForkGraph},
+    lunul_sdk::{
         clock::{Epoch, Slot},
         hash::Hash,
         timing,
@@ -714,15 +714,15 @@ mod tests {
             },
         },
         assert_matches::assert_matches,
-        solana_accounts_db::epoch_accounts_hash::EpochAccountsHash,
-        solana_sdk::{
+        lunul_accounts_db::epoch_accounts_hash::EpochAccountsHash,
+        lunul_sdk::{
             clock::UnixTimestamp,
             epoch_schedule::EpochSchedule,
             hash::Hash,
             pubkey::Pubkey,
             signature::{Keypair, Signer},
         },
-        solana_vote_program::vote_state::BlockTimestamp,
+        lunul_vote_program::vote_state::BlockTimestamp,
         std::{sync::atomic::Ordering::Relaxed, time::Duration},
     };
 
@@ -803,7 +803,7 @@ mod tests {
 
     #[test]
     fn test_bank_forks_different_set_root() {
-        solana_logger::setup();
+        lunul_logger::setup();
         let leader_keypair = Keypair::new();
         let GenesisConfigInfo {
             mut genesis_config,

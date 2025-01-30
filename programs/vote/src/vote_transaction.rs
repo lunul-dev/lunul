@@ -1,9 +1,9 @@
 use {
-    solana_program::vote::{
+    lunul_program::vote::{
         self,
         state::{Vote, VoteStateUpdate},
     },
-    solana_sdk::{
+    lunul_sdk::{
         clock::Slot,
         hash::Hash,
         signature::{Keypair, Signer},

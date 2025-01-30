@@ -1,5 +1,5 @@
 [package]
-name = "solana-accounts-cluster-bench"
+name = "lunul-accounts-cluster-bench"
 publish = false
 version = { workspace = true }
 authors = { workspace = true }
@@ -13,29 +13,29 @@ clap = { workspace = true }
 log = { workspace = true }
 rand = { workspace = true }
 rayon = { workspace = true }
-solana-account-decoder = { workspace = true }
-solana-accounts-db = { workspace = true }
-solana-clap-utils = { workspace = true }
-solana-cli-config = { workspace = true }
-solana-client = { workspace = true }
-solana-faucet = { workspace = true }
-solana-gossip = { workspace = true }
-solana-logger = { workspace = true }
-solana-measure = { workspace = true }
-solana-net-utils = { workspace = true }
-solana-rpc-client = { workspace = true, features = ["default"] }
-solana-runtime = { workspace = true }
-solana-sdk = { workspace = true }
-solana-streamer = { workspace = true }
-solana-transaction-status = { workspace = true }
-solana-version = { workspace = true }
+lunul-account-decoder = { workspace = true }
+lunul-accounts-db = { workspace = true }
+lunul-clap-utils = { workspace = true }
+lunul-cli-config = { workspace = true }
+lunul-client = { workspace = true }
+lunul-faucet = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-net-utils = { workspace = true }
+lunul-rpc-client = { workspace = true, features = ["default"] }
+lunul-runtime = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-transaction-status = { workspace = true }
+lunul-version = { workspace = true }
 spl-token = { workspace = true, features = ["no-entrypoint"] }
 
 [dev-dependencies]
-solana-core = { workspace = true }
-solana-local-cluster = { workspace = true }
-solana-runtime = { workspace = true, features = ["dev-context-only-utils"] }
-solana-test-validator = { workspace = true }
+lunul-core = { workspace = true }
+lunul-local-cluster = { workspace = true }
+lunul-runtime = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-test-validator = { workspace = true }
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]

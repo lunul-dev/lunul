@@ -1,6 +1,6 @@
 use {
-    solana_program_test::{processor, ProgramTest, ProgramTestContext},
-    solana_sdk::{
+    lunul_program_test::{processor, ProgramTest, ProgramTestContext},
+    lunul_sdk::{
         account_info::AccountInfo,
         clock::Slot,
         entrypoint::ProgramResult,

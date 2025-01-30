@@ -58,12 +58,12 @@ case "$clientType" in
 esac
 
 case $clientToRun in
-solana-bench-tps)
+lunul-bench-tps)
   net/scripts/rsync-retry.sh -vPrc \
-    "$entrypointIp":~/solana/config/bench-tps"$clientIndex".yml ./client-accounts.yml
+    "$entrypointIp":~/lunul/config/bench-tps"$clientIndex".yml ./client-accounts.yml
 
   net/scripts/rsync-retry.sh -vPrc \
-    "$entrypointIp":~/solana/config/validator-identity-1.json ./validator-identity.json
+    "$entrypointIp":~/lunul/config/validator-identity-1.json ./validator-identity.json
 
   args=()
 
@@ -77,7 +77,7 @@ solana-bench-tps)
   fi
 
   clientCommand="\
-    solana-bench-tps \
+    lunul-bench-tps \
       --duration 7500 \
       --sustained \
       --threads $threadCount \
@@ -90,7 +90,7 @@ solana-bench-tps)
 idle)
   # Add the faucet keypair to idle clients for convenience
   net/scripts/rsync-retry.sh -vPrc \
-    "$entrypointIp":~/solana/config/faucet.json ~/solana/
+    "$entrypointIp":~/lunul/config/faucet.json ~/lunul/
   exit 0
   ;;
 *)
@@ -99,9 +99,9 @@ idle)
 esac
 
 
-cat > ~/solana/on-reboot <<EOF
+cat > ~/lunul/on-reboot <<EOF
 #!/usr/bin/env bash
-cd ~/solana
+cd ~/lunul
 
 PATH="$HOME"/.cargo/bin:"$PATH"
 export USE_INSTALL=1
@@ -128,10 +128,10 @@ tmux new -s "$clientToRun" -d "
   done
 "
 EOF
-chmod +x ~/solana/on-reboot
-echo "@reboot ~/solana/on-reboot" | crontab -
+chmod +x ~/lunul/on-reboot
+echo "@reboot ~/lunul/on-reboot" | crontab -
 
-~/solana/on-reboot
+~/lunul/on-reboot
 
 sleep 1
 tmux capture-pane -t "$clientToRun" -p -S -100

@@ -1,8 +1,8 @@
 [package]
-name = "solana-validator"
+name = "lunul-validator"
 description = "Blockchain, Rebuilt for Scale"
-documentation = "https://docs.rs/solana-validator"
-default-run = "solana-validator"
+documentation = "https://docs.rs/lunul-validator"
+default-run = "lunul-validator"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -32,45 +32,45 @@ rayon = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 serde_yaml = { workspace = true }
-solana-accounts-db = { workspace = true }
-solana-clap-utils = { workspace = true }
-solana-cli-config = { workspace = true }
-solana-core = { workspace = true }
-solana-download-utils = { workspace = true }
-solana-entry = { workspace = true }
-solana-faucet = { workspace = true }
-solana-genesis-utils = { workspace = true }
-solana-geyser-plugin-interface = { workspace = true }
-solana-geyser-plugin-manager = { workspace = true }
-solana-gossip = { workspace = true }
-solana-ledger = { workspace = true }
-solana-logger = { workspace = true }
-solana-metrics = { workspace = true }
-solana-net-utils = { workspace = true }
-solana-perf = { workspace = true }
-solana-poh = { workspace = true }
-solana-program-runtime = { workspace = true }
-solana-rayon-threadlimit = { workspace = true }
-solana-rpc = { workspace = true }
-solana-rpc-client = { workspace = true }
-solana-rpc-client-api = { workspace = true }
-solana-runtime = { workspace = true }
-solana-sdk = { workspace = true }
-solana-send-transaction-service = { workspace = true }
-solana-storage-bigtable = { workspace = true }
-solana-streamer = { workspace = true }
-solana-test-validator = { workspace = true }
-solana-tpu-client = { workspace = true }
-solana-unified-scheduler-pool = { workspace = true }
-solana-version = { workspace = true }
-solana-vote-program = { workspace = true }
+lunul-accounts-db = { workspace = true }
+lunul-clap-utils = { workspace = true }
+lunul-cli-config = { workspace = true }
+lunul-core = { workspace = true }
+lunul-download-utils = { workspace = true }
+lunul-entry = { workspace = true }
+lunul-faucet = { workspace = true }
+lunul-genesis-utils = { workspace = true }
+lunul-geyser-plugin-interface = { workspace = true }
+lunul-geyser-plugin-manager = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-ledger = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-metrics = { workspace = true }
+lunul-net-utils = { workspace = true }
+lunul-perf = { workspace = true }
+lunul-poh = { workspace = true }
+lunul-program-runtime = { workspace = true }
+lunul-rayon-threadlimit = { workspace = true }
+lunul-rpc = { workspace = true }
+lunul-rpc-client = { workspace = true }
+lunul-rpc-client-api = { workspace = true }
+lunul-runtime = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-send-transaction-service = { workspace = true }
+lunul-storage-bigtable = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-test-validator = { workspace = true }
+lunul-tpu-client = { workspace = true }
+lunul-unified-scheduler-pool = { workspace = true }
+lunul-version = { workspace = true }
+lunul-vote-program = { workspace = true }
 symlink = { workspace = true }
 thiserror = { workspace = true }
 tokio = { workspace = true }
 
 [dev-dependencies]
-solana-account-decoder = { workspace = true }
-solana-runtime = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-account-decoder = { workspace = true }
+lunul-runtime = { workspace = true, features = ["dev-context-only-utils"] }
 spl-token-2022 = { workspace = true, features = ["no-entrypoint"] }
 
 [target.'cfg(not(target_env = "msvc"))'.dependencies]

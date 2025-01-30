@@ -1,12 +1,12 @@
-// Re-exported since these have moved to `solana_sdk`.
+// Re-exported since these have moved to `lunul_sdk`.
 #[deprecated(
     since = "1.18.0",
-    note = "Please use `solana_sdk::inner_instruction` types instead"
+    note = "Please use `lunul_sdk::inner_instruction` types instead"
 )]
-pub use solana_sdk::inner_instruction::{InnerInstruction, InnerInstructionsList};
+pub use lunul_sdk::inner_instruction::{InnerInstruction, InnerInstructionsList};
 use {
-    solana_program_runtime::loaded_programs::LoadedProgramsForTxBatch,
-    solana_sdk::{
+    lunul_program_runtime::loaded_programs::LoadedProgramsForTxBatch,
+    lunul_sdk::{
         nonce_info::{NonceFull, NonceInfo},
         rent_debits::RentDebits,
         transaction::{self, TransactionError},

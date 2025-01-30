@@ -1,6 +1,6 @@
 use {
-    solana_sdk::{clock::Slot, commitment_config::CommitmentLevel},
-    solana_vote_program::vote_state::MAX_LOCKOUT_HISTORY,
+    lunul_sdk::{clock::Slot, commitment_config::CommitmentLevel},
+    lunul_vote_program::vote_state::MAX_LOCKOUT_HISTORY,
     std::collections::HashMap,
 };
 

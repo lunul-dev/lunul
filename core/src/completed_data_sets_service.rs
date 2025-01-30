@@ -6,10 +6,10 @@
 
 use {
     crossbeam_channel::{Receiver, RecvTimeoutError, Sender},
-    solana_entry::entry::Entry,
-    solana_ledger::blockstore::{Blockstore, CompletedDataSetInfo},
-    solana_rpc::{max_slots::MaxSlots, rpc_subscriptions::RpcSubscriptions},
-    solana_sdk::signature::Signature,
+    lunul_entry::entry::Entry,
+    lunul_ledger::blockstore::{Blockstore, CompletedDataSetInfo},
+    lunul_rpc::{max_slots::MaxSlots, rpc_subscriptions::RpcSubscriptions},
+    lunul_sdk::signature::Signature,
     std::{
         sync::{
             atomic::{AtomicBool, Ordering},
@@ -109,7 +109,7 @@ impl CompletedDataSetsService {
 pub mod test {
     use {
         super::*,
-        solana_sdk::{
+        lunul_sdk::{
             hash::Hash,
             signature::{Keypair, Signer},
             transaction::Transaction,

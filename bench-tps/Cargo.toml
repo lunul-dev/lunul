@@ -1,5 +1,5 @@
 [package]
-name = "solana-bench-tps"
+name = "lunul-bench-tps"
 publish = false
 version = { workspace = true }
 authors = { workspace = true }
@@ -16,36 +16,36 @@ rand = { workspace = true }
 rayon = { workspace = true }
 serde_json = { workspace = true }
 serde_yaml = { workspace = true }
-solana-clap-utils = { workspace = true }
-solana-cli-config = { workspace = true }
-solana-client = { workspace = true }
-solana-connection-cache = { workspace = true }
-solana-core = { workspace = true }
-solana-faucet = { workspace = true }
-solana-genesis = { workspace = true }
-solana-gossip = { workspace = true }
-solana-logger = { workspace = true }
-solana-measure = { workspace = true }
-solana-metrics = { workspace = true }
-solana-net-utils = { workspace = true }
-solana-rpc = { workspace = true }
-solana-rpc-client = { workspace = true }
-solana-rpc-client-api = { workspace = true }
-solana-rpc-client-nonce-utils = { workspace = true }
-solana-runtime = { workspace = true }
-solana-sdk = { workspace = true }
-solana-streamer = { workspace = true }
-solana-tpu-client = { workspace = true }
-solana-transaction-status = { workspace = true }
-solana-version = { workspace = true }
+lunul-clap-utils = { workspace = true }
+lunul-cli-config = { workspace = true }
+lunul-client = { workspace = true }
+lunul-connection-cache = { workspace = true }
+lunul-core = { workspace = true }
+lunul-faucet = { workspace = true }
+lunul-genesis = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-metrics = { workspace = true }
+lunul-net-utils = { workspace = true }
+lunul-rpc = { workspace = true }
+lunul-rpc-client = { workspace = true }
+lunul-rpc-client-api = { workspace = true }
+lunul-rpc-client-nonce-utils = { workspace = true }
+lunul-runtime = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-tpu-client = { workspace = true }
+lunul-transaction-status = { workspace = true }
+lunul-version = { workspace = true }
 spl-instruction-padding = { workspace = true }
 thiserror = { workspace = true }
 
 [dev-dependencies]
 serial_test = { workspace = true }
-solana-local-cluster = { workspace = true }
-solana-runtime = { workspace = true, features = ["dev-context-only-utils"] }
-solana-test-validator = { workspace = true }
+lunul-local-cluster = { workspace = true }
+lunul-runtime = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-test-validator = { workspace = true }
 tempfile = { workspace = true }
 
 [package.metadata.docs.rs]

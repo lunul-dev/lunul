@@ -1,7 +1,7 @@
 [package]
-name = "solana-accounts-db"
+name = "lunul-accounts-db"
 description = "Solana accounts db"
-documentation = "https://docs.rs/solana-acounts-db"
+documentation = "https://docs.rs/lunul-acounts-db"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -43,20 +43,20 @@ seqlock = { workspace = true }
 serde = { workspace = true, features = ["rc"] }
 serde_derive = { workspace = true }
 smallvec = { workspace = true, features = ["const_generics"] }
-solana-bucket-map = { workspace = true }
-solana-config-program = { workspace = true }
-solana-frozen-abi = { workspace = true }
-solana-frozen-abi-macro = { workspace = true }
-solana-measure = { workspace = true }
-solana-metrics = { workspace = true }
-solana-nohash-hasher = { workspace = true }
-solana-program-runtime = { workspace = true }
-solana-rayon-threadlimit = { workspace = true }
-solana-sdk = { workspace = true }
-solana-stake-program = { workspace = true }
-solana-svm = { workspace = true }
-solana-system-program = { workspace = true }
-solana-vote-program = { workspace = true }
+lunul-bucket-map = { workspace = true }
+lunul-config-program = { workspace = true }
+lunul-frozen-abi = { workspace = true }
+lunul-frozen-abi-macro = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-metrics = { workspace = true }
+lunul-nohash-hasher = { workspace = true }
+lunul-program-runtime = { workspace = true }
+lunul-rayon-threadlimit = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-stake-program = { workspace = true }
+lunul-svm = { workspace = true }
+lunul-system-program = { workspace = true }
+lunul-vote-program = { workspace = true }
 static_assertions = { workspace = true }
 strum = { workspace = true, features = ["derive"] }
 strum_macros = { workspace = true }
@@ -66,7 +66,7 @@ thiserror = { workspace = true }
 
 [lib]
 crate-type = ["lib"]
-name = "solana_accounts_db"
+name = "lunul_accounts_db"
 
 [dev-dependencies]
 assert_matches = { workspace = true }
@@ -76,9 +76,9 @@ libsecp256k1 = { workspace = true }
 memoffset = { workspace = true }
 rand_chacha = { workspace = true }
 # See order-crates-for-publishing.py for using this unusual `path = "."`
-solana-accounts-db = { path = ".", features = ["dev-context-only-utils"] }
-solana-logger = { workspace = true }
-solana-sdk = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-accounts-db = { path = ".", features = ["dev-context-only-utils"] }
+lunul-logger = { workspace = true }
+lunul-sdk = { workspace = true, features = ["dev-context-only-utils"] }
 static_assertions = { workspace = true }
 test-case = { workspace = true }
 

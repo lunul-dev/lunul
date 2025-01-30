@@ -1,15 +1,15 @@
 #![allow(clippy::arithmetic_side_effects)]
 use {
-    solana_cli::cli::{process_command, CliCommand, CliConfig},
-    solana_faucet::faucet::run_local_faucet,
-    solana_rpc_client::rpc_client::RpcClient,
-    solana_sdk::{
+    lunul_cli::cli::{process_command, CliCommand, CliConfig},
+    lunul_faucet::faucet::run_local_faucet,
+    lunul_rpc_client::rpc_client::RpcClient,
+    lunul_sdk::{
         commitment_config::CommitmentConfig,
         native_token::sol_to_lamports,
         signature::{Keypair, Signer},
     },
-    solana_streamer::socket::SocketAddrSpace,
-    solana_test_validator::TestValidator,
+    lunul_streamer::socket::SocketAddrSpace,
+    lunul_test_validator::TestValidator,
 };
 
 #[test]

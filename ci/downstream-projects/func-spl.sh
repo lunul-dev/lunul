@@ -21,14 +21,14 @@ spl() {
     )
     set -x
     rm -rf spl
-    git clone https://github.com/solana-labs/solana-program-library.git spl
-    # copy toolchain file to use solana's rust version
+    git clone https://github.com/lunul-labs/lunul-program-library.git spl
+    # copy toolchain file to use lunul's rust version
     cp "$SOLANA_DIR"/rust-toolchain.toml spl/
     cd spl || exit 1
 
-    project_used_solana_version=$(sed -nE 's/solana-sdk = \"[>=<~]*(.*)\"/\1/p' <"token/program/Cargo.toml")
-    echo "used solana version: $project_used_solana_version"
-    if semverGT "$project_used_solana_version" "$SOLANA_VER"; then
+    project_used_lunul_version=$(sed -nE 's/lunul-sdk = \"[>=<~]*(.*)\"/\1/p' <"token/program/Cargo.toml")
+    echo "used lunul version: $project_used_lunul_version"
+    if semverGT "$project_used_lunul_version" "$SOLANA_VER"; then
       echo "skip"
       return
     fi

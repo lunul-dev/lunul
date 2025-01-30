@@ -1,7 +1,7 @@
 [package]
-name = "solana-rpc"
+name = "lunul-rpc"
 description = "Solana RPC"
-documentation = "https://docs.rs/solana-rpc"
+documentation = "https://docs.rs/lunul-rpc"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -29,31 +29,31 @@ serde = { workspace = true }
 serde_derive = { workspace = true }
 serde_json = { workspace = true }
 soketto = { workspace = true }
-solana-account-decoder = { workspace = true }
-solana-accounts-db = { workspace = true }
-solana-client = { workspace = true }
-solana-entry = { workspace = true }
-solana-faucet = { workspace = true }
-solana-gossip = { workspace = true }
-solana-ledger = { workspace = true }
-solana-measure = { workspace = true }
-solana-metrics = { workspace = true }
-solana-perf = { workspace = true }
-solana-poh = { workspace = true }
-solana-rayon-threadlimit = { workspace = true }
-solana-rpc-client-api = { workspace = true }
-solana-runtime = { workspace = true }
-solana-sdk = { workspace = true }
-solana-send-transaction-service = { workspace = true }
-solana-stake-program = { workspace = true }
-solana-storage-bigtable = { workspace = true }
-solana-streamer = { workspace = true }
-solana-svm = { workspace = true }
-solana-tpu-client = { workspace = true }
-solana-transaction-status = { workspace = true }
-solana-version = { workspace = true }
-solana-vote = { workspace = true }
-solana-vote-program = { workspace = true }
+lunul-account-decoder = { workspace = true }
+lunul-accounts-db = { workspace = true }
+lunul-client = { workspace = true }
+lunul-entry = { workspace = true }
+lunul-faucet = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-ledger = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-metrics = { workspace = true }
+lunul-perf = { workspace = true }
+lunul-poh = { workspace = true }
+lunul-rayon-threadlimit = { workspace = true }
+lunul-rpc-client-api = { workspace = true }
+lunul-runtime = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-send-transaction-service = { workspace = true }
+lunul-stake-program = { workspace = true }
+lunul-storage-bigtable = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-svm = { workspace = true }
+lunul-tpu-client = { workspace = true }
+lunul-transaction-status = { workspace = true }
+lunul-version = { workspace = true }
+lunul-vote = { workspace = true }
+lunul-vote-program = { workspace = true }
 spl-token = { workspace = true, features = ["no-entrypoint"] }
 spl-token-2022 = { workspace = true, features = ["no-entrypoint"] }
 stream-cancel = { workspace = true }
@@ -63,15 +63,15 @@ tokio-util = { workspace = true, features = ["codec", "compat"] }
 
 [dev-dependencies]
 serial_test = { workspace = true }
-solana-net-utils = { workspace = true }
-solana-runtime = { workspace = true, features = ["dev-context-only-utils"] }
-solana-stake-program = { workspace = true }
+lunul-net-utils = { workspace = true }
+lunul-runtime = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-stake-program = { workspace = true }
 spl-pod = { workspace = true }
 symlink = { workspace = true }
 
 [lib]
 crate-type = ["lib"]
-name = "solana_rpc"
+name = "lunul_rpc"
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]

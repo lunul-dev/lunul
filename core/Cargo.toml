@@ -1,7 +1,7 @@
 [package]
-name = "solana-core"
+name = "lunul-core"
 description = "Blockchain, Rebuilt for Scale"
-documentation = "https://docs.rs/solana-core"
+documentation = "https://docs.rs/lunul-core"
 readme = "../README.md"
 version = { workspace = true }
 authors = { workspace = true }
@@ -11,7 +11,7 @@ license = { workspace = true }
 edition = { workspace = true }
 
 [badges]
-codecov = { repository = "solana-labs/solana", branch = "master", service = "github" }
+codecov = { repository = "lunul-labs/lunul", branch = "master", service = "github" }
 
 [dependencies]
 base64 = { workspace = true }
@@ -41,39 +41,39 @@ rustls = { workspace = true }
 serde = { workspace = true }
 serde_bytes = { workspace = true }
 serde_derive = { workspace = true }
-solana-accounts-db = { workspace = true }
-solana-bloom = { workspace = true }
-solana-client = { workspace = true }
-solana-cost-model = { workspace = true }
-solana-entry = { workspace = true }
-solana-frozen-abi = { workspace = true }
-solana-frozen-abi-macro = { workspace = true }
-solana-geyser-plugin-manager = { workspace = true }
-solana-gossip = { workspace = true }
-solana-ledger = { workspace = true }
-solana-measure = { workspace = true }
-solana-metrics = { workspace = true }
-solana-net-utils = { workspace = true }
-solana-perf = { workspace = true }
-solana-poh = { workspace = true }
-solana-program-runtime = { workspace = true }
-solana-quic-client = { workspace = true }
-solana-rayon-threadlimit = { workspace = true }
-solana-rpc = { workspace = true }
-solana-rpc-client-api = { workspace = true }
-solana-runtime = { workspace = true }
-solana-sdk = { workspace = true }
-solana-send-transaction-service = { workspace = true }
-solana-streamer = { workspace = true }
-solana-svm = { workspace = true }
-solana-tpu-client = { workspace = true }
-solana-transaction-status = { workspace = true }
-solana-turbine = { workspace = true }
-solana-unified-scheduler-pool = { workspace = true }
-solana-version = { workspace = true }
-solana-vote = { workspace = true }
-solana-vote-program = { workspace = true }
-solana-wen-restart = { workspace = true }
+lunul-accounts-db = { workspace = true }
+lunul-bloom = { workspace = true }
+lunul-client = { workspace = true }
+lunul-cost-model = { workspace = true }
+lunul-entry = { workspace = true }
+lunul-frozen-abi = { workspace = true }
+lunul-frozen-abi-macro = { workspace = true }
+lunul-geyser-plugin-manager = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-ledger = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-metrics = { workspace = true }
+lunul-net-utils = { workspace = true }
+lunul-perf = { workspace = true }
+lunul-poh = { workspace = true }
+lunul-program-runtime = { workspace = true }
+lunul-quic-client = { workspace = true }
+lunul-rayon-threadlimit = { workspace = true }
+lunul-rpc = { workspace = true }
+lunul-rpc-client-api = { workspace = true }
+lunul-runtime = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-send-transaction-service = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-svm = { workspace = true }
+lunul-tpu-client = { workspace = true }
+lunul-transaction-status = { workspace = true }
+lunul-turbine = { workspace = true }
+lunul-unified-scheduler-pool = { workspace = true }
+lunul-version = { workspace = true }
+lunul-vote = { workspace = true }
+lunul-vote-program = { workspace = true }
+lunul-wen-restart = { workspace = true }
 strum = { workspace = true, features = ["derive"] }
 strum_macros = { workspace = true }
 sys-info = { workspace = true }
@@ -88,13 +88,13 @@ fs_extra = { workspace = true }
 serde_json = { workspace = true }
 serial_test = { workspace = true }
 # See order-crates-for-publishing.py for using this unusual `path = "."`
-solana-core = { path = ".", features = ["dev-context-only-utils"] }
-solana-logger = { workspace = true }
-solana-poh = { workspace = true, features = ["dev-context-only-utils"] }
-solana-program-runtime = { workspace = true }
-solana-runtime = { workspace = true, features = ["dev-context-only-utils"] }
-solana-sdk = { workspace = true, features = ["dev-context-only-utils"] }
-solana-stake-program = { workspace = true }
+lunul-core = { path = ".", features = ["dev-context-only-utils"] }
+lunul-logger = { workspace = true }
+lunul-poh = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-program-runtime = { workspace = true }
+lunul-runtime = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-sdk = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-stake-program = { workspace = true }
 static_assertions = { workspace = true }
 systemstat = { workspace = true }
 test-case = { workspace = true }

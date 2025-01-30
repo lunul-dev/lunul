@@ -1,8 +1,8 @@
 use {
     super::*,
-    solana_entry::entry::Entry,
-    solana_ledger::shred::{self, ProcessShredsStats, ReedSolomonCache, Shredder},
-    solana_sdk::{hash::Hash, signature::Keypair},
+    lunul_entry::entry::Entry,
+    lunul_ledger::shred::{self, ProcessShredsStats, ReedSolomonCache, Shredder},
+    lunul_sdk::{hash::Hash, signature::Keypair},
 };
 
 #[derive(Clone)]
@@ -179,9 +179,9 @@ impl BroadcastRun for BroadcastFakeShredsRun {
 mod tests {
     use {
         super::*,
-        solana_gossip::contact_info::ContactInfo,
-        solana_sdk::signature::Signer,
-        solana_streamer::socket::SocketAddrSpace,
+        lunul_gossip::contact_info::ContactInfo,
+        lunul_sdk::signature::Signer,
+        lunul_streamer::socket::SocketAddrSpace,
         std::net::{IpAddr, Ipv4Addr, SocketAddr},
     };
 

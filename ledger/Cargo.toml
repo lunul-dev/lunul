@@ -1,7 +1,7 @@
 [package]
-name = "solana-ledger"
+name = "lunul-ledger"
 description = "Solana ledger"
-documentation = "https://docs.rs/solana-ledger"
+documentation = "https://docs.rs/lunul-ledger"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -37,27 +37,27 @@ scopeguard = { workspace = true }
 serde = { workspace = true }
 serde_bytes = { workspace = true }
 sha2 = { workspace = true }
-solana-account-decoder = { workspace = true }
-solana-accounts-db = { workspace = true }
-solana-bpf-loader-program = { workspace = true }
-solana-cost-model = { workspace = true }
-solana-entry = { workspace = true }
-solana-frozen-abi = { workspace = true }
-solana-frozen-abi-macro = { workspace = true }
-solana-measure = { workspace = true }
-solana-metrics = { workspace = true }
-solana-perf = { workspace = true }
-solana-program-runtime = { workspace = true }
-solana-rayon-threadlimit = { workspace = true }
-solana-runtime = { workspace = true }
-solana-sdk = { workspace = true }
-solana-stake-program = { workspace = true }
-solana-storage-bigtable = { workspace = true }
-solana-storage-proto = { workspace = true }
-solana-svm = { workspace = true }
-solana-transaction-status = { workspace = true }
-solana-vote = { workspace = true }
-solana-vote-program = { workspace = true }
+lunul-account-decoder = { workspace = true }
+lunul-accounts-db = { workspace = true }
+lunul-bpf-loader-program = { workspace = true }
+lunul-cost-model = { workspace = true }
+lunul-entry = { workspace = true }
+lunul-frozen-abi = { workspace = true }
+lunul-frozen-abi-macro = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-metrics = { workspace = true }
+lunul-perf = { workspace = true }
+lunul-program-runtime = { workspace = true }
+lunul-rayon-threadlimit = { workspace = true }
+lunul-runtime = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-stake-program = { workspace = true }
+lunul-storage-bigtable = { workspace = true }
+lunul-storage-proto = { workspace = true }
+lunul-svm = { workspace = true }
+lunul-transaction-status = { workspace = true }
+lunul-vote = { workspace = true }
+lunul-vote-program = { workspace = true }
 spl-token = { workspace = true, features = ["no-entrypoint"] }
 spl-token-2022 = { workspace = true, features = ["no-entrypoint"] }
 static_assertions = { workspace = true }
@@ -78,9 +78,9 @@ features = ["lz4"]
 
 [dev-dependencies]
 bs58 = { workspace = true }
-solana-account-decoder = { workspace = true }
-solana-logger = { workspace = true }
-solana-runtime = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-account-decoder = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-runtime = { workspace = true, features = ["dev-context-only-utils"] }
 spl-pod = { workspace = true }
 test-case = { workspace = true }
 
@@ -92,7 +92,7 @@ dev-context-only-utils = []
 
 [lib]
 crate-type = ["lib"]
-name = "solana_ledger"
+name = "lunul_ledger"
 
 [[bench]]
 name = "sigverify_shreds"

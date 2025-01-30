@@ -1,7 +1,7 @@
 [package]
-name = "solana-rpc-test"
+name = "lunul-rpc-test"
 description = "Solana RPC Test"
-documentation = "https://docs.rs/solana-rpc-test"
+documentation = "https://docs.rs/lunul-rpc-test"
 publish = false
 version = { workspace = true }
 authors = { workspace = true }
@@ -19,21 +19,21 @@ log = { workspace = true }
 reqwest = { workspace = true, features = ["blocking", "brotli", "deflate", "gzip", "rustls-tls", "json"] }
 serde = { workspace = true }
 serde_json = { workspace = true }
-solana-account-decoder = { workspace = true }
-solana-client = { workspace = true }
-solana-pubsub-client = { workspace = true }
-solana-rpc = { workspace = true }
-solana-rpc-client = { workspace = true }
-solana-rpc-client-api = { workspace = true }
-solana-sdk = { workspace = true }
-solana-streamer = { workspace = true }
-solana-test-validator = { workspace = true }
-solana-tpu-client = { workspace = true }
-solana-transaction-status = { workspace = true }
+lunul-account-decoder = { workspace = true }
+lunul-client = { workspace = true }
+lunul-pubsub-client = { workspace = true }
+lunul-rpc = { workspace = true }
+lunul-rpc-client = { workspace = true }
+lunul-rpc-client-api = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-test-validator = { workspace = true }
+lunul-tpu-client = { workspace = true }
+lunul-transaction-status = { workspace = true }
 tokio = { workspace = true, features = ["full"] }
 
 [dev-dependencies]
-solana-logger = { workspace = true }
+lunul-logger = { workspace = true }
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]

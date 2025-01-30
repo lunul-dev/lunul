@@ -1,8 +1,8 @@
 use {
     crate::entry_notifier_interface::EntryNotifierArc,
     crossbeam_channel::{unbounded, Receiver, RecvTimeoutError, Sender},
-    solana_entry::entry::EntrySummary,
-    solana_sdk::clock::Slot,
+    lunul_entry::entry::EntrySummary,
+    lunul_sdk::clock::Slot,
     std::{
         sync::{
             atomic::{AtomicBool, Ordering},

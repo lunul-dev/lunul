@@ -1,6 +1,6 @@
 use {
-    solana_runtime::bank::Bank,
-    solana_sdk::{account::AccountSharedData, pubkey::Pubkey},
+    lunul_runtime::bank::Bank,
+    lunul_sdk::{account::AccountSharedData, pubkey::Pubkey},
     std::collections::HashMap,
 };
 

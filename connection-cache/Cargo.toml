@@ -1,7 +1,7 @@
 [package]
-name = "solana-connection-cache"
+name = "lunul-connection-cache"
 description = "Solana Connection Cache"
-documentation = "https://docs.rs/solana-connection-cache"
+documentation = "https://docs.rs/lunul-connection-cache"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -19,13 +19,13 @@ indicatif = { workspace = true, optional = true }
 log = { workspace = true }
 rand = { workspace = true }
 rayon = { workspace = true }
-solana-measure = { workspace = true }
-solana-metrics = { workspace = true }
-solana-sdk = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-metrics = { workspace = true }
+lunul-sdk = { workspace = true }
 thiserror = { workspace = true }
 tokio = { workspace = true, features = ["full"] }
 
 [dev-dependencies]
 rand_chacha = { workspace = true }
-solana-logger = { workspace = true }
-solana-net-utils = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-net-utils = { workspace = true }

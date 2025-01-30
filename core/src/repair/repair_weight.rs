@@ -9,12 +9,12 @@ use {
         },
         replay_stage::DUPLICATE_THRESHOLD,
     },
-    solana_ledger::{
+    lunul_ledger::{
         ancestor_iterator::AncestorIterator, blockstore::Blockstore, blockstore_meta::SlotMeta,
     },
-    solana_measure::measure::Measure,
-    solana_runtime::epoch_stakes::EpochStakes,
-    solana_sdk::{
+    lunul_measure::measure::Measure,
+    lunul_runtime::epoch_stakes::EpochStakes,
+    lunul_sdk::{
         clock::Slot,
         epoch_schedule::{Epoch, EpochSchedule},
         hash::Hash,
@@ -978,13 +978,13 @@ mod test {
     use {
         super::*,
         itertools::Itertools,
-        solana_accounts_db::contains::Contains,
-        solana_ledger::{
+        lunul_accounts_db::contains::Contains,
+        lunul_ledger::{
             blockstore::{make_chaining_slot_entries, Blockstore},
             get_tmp_ledger_path,
         },
-        solana_runtime::{bank::Bank, bank_utils},
-        solana_sdk::hash::Hash,
+        lunul_runtime::{bank::Bank, bank_utils},
+        lunul_sdk::hash::Hash,
         trees::tr,
     };
 

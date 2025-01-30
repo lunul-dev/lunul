@@ -1,5 +1,5 @@
 [package]
-name = "solana-transaction-dos"
+name = "lunul-transaction-dos"
 publish = false
 version = { workspace = true }
 authors = { workspace = true }
@@ -14,24 +14,24 @@ clap = { workspace = true }
 log = { workspace = true }
 rand = { workspace = true }
 rayon = { workspace = true }
-solana-clap-utils = { workspace = true }
-solana-cli = { workspace = true }
-solana-client = { workspace = true }
-solana-core = { workspace = true }
-solana-faucet = { workspace = true }
-solana-gossip = { workspace = true }
-solana-logger = { workspace = true }
-solana-measure = { workspace = true }
-solana-net-utils = { workspace = true }
-solana-rpc-client = { workspace = true }
-solana-runtime = { workspace = true }
-solana-sdk = { workspace = true }
-solana-streamer = { workspace = true }
-solana-transaction-status = { workspace = true }
-solana-version = { workspace = true }
+lunul-clap-utils = { workspace = true }
+lunul-cli = { workspace = true }
+lunul-client = { workspace = true }
+lunul-core = { workspace = true }
+lunul-faucet = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-net-utils = { workspace = true }
+lunul-rpc-client = { workspace = true }
+lunul-runtime = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-transaction-status = { workspace = true }
+lunul-version = { workspace = true }
 
 [dev-dependencies]
-solana-local-cluster = { workspace = true }
+lunul-local-cluster = { workspace = true }
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]

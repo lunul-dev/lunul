@@ -1,7 +1,7 @@
 [package]
-name = "solana-entry"
+name = "lunul-entry"
 description = "Solana Entry"
-documentation = "https://docs.rs/solana-poh"
+documentation = "https://docs.rs/lunul-poh"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -18,20 +18,20 @@ log = { workspace = true }
 rand = { workspace = true }
 rayon = { workspace = true }
 serde = { workspace = true }
-solana-measure = { workspace = true }
-solana-merkle-tree = { workspace = true }
-solana-metrics = { workspace = true }
-solana-perf = { workspace = true }
-solana-rayon-threadlimit = { workspace = true }
-solana-sdk = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-merkle-tree = { workspace = true }
+lunul-metrics = { workspace = true }
+lunul-perf = { workspace = true }
+lunul-rayon-threadlimit = { workspace = true }
+lunul-sdk = { workspace = true }
 
 [dev-dependencies]
 assert_matches = { workspace = true }
-solana-logger = { workspace = true }
+lunul-logger = { workspace = true }
 
 [lib]
 crate-type = ["lib"]
-name = "solana_entry"
+name = "lunul_entry"
 
 [[bench]]
 name = "entry_sigverify"

@@ -1,7 +1,7 @@
 [package]
-name = "solana-install"
-description = "The solana cluster software installer"
-documentation = "https://docs.rs/solana-install"
+name = "lunul-install"
+description = "The lunul cluster software installer"
+documentation = "https://docs.rs/lunul-install"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -28,12 +28,12 @@ semver = { workspace = true }
 serde = { workspace = true, features = ["derive"] }
 serde_yaml = { workspace = true }
 serde_yaml_08 = { package = "serde_yaml", version = "0.8.26" }
-solana-clap-utils = { workspace = true }
-solana-config-program = { workspace = true }
-solana-logger = { workspace = true }
-solana-rpc-client = { workspace = true }
-solana-sdk = { workspace = true }
-solana-version = { workspace = true }
+lunul-clap-utils = { workspace = true }
+lunul-config-program = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-rpc-client = { workspace = true }
+lunul-sdk = { workspace = true }
+lunul-version = { workspace = true }
 tar = { workspace = true }
 tempfile = { workspace = true }
 url = { workspace = true }

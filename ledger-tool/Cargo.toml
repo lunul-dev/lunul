@@ -1,7 +1,7 @@
 [package]
-name = "solana-ledger-tool"
+name = "lunul-ledger-tool"
 description = "Blockchain, Rebuilt for Scale"
-documentation = "https://docs.rs/solana-ledger-tool"
+documentation = "https://docs.rs/lunul-ledger-tool"
 version = { workspace = true }
 authors = { workspace = true }
 repository = { workspace = true }
@@ -24,31 +24,31 @@ num_cpus = { workspace = true }
 regex = { workspace = true }
 serde = { workspace = true, features = ["derive"] }
 serde_json = { workspace = true }
-solana-account-decoder = { workspace = true }
-solana-accounts-db = { workspace = true }
-solana-bpf-loader-program = { workspace = true }
-solana-clap-utils = { workspace = true }
-solana-cli-output = { workspace = true }
-solana-core = { workspace = true }
-solana-cost-model = { workspace = true }
-solana-entry = { workspace = true }
-solana-geyser-plugin-manager = { workspace = true }
-solana-gossip = { workspace = true }
-solana-ledger = { workspace = true }
-solana-logger = { workspace = true }
-solana-measure = { workspace = true }
-solana-program-runtime = { workspace = true }
-solana-rpc = { workspace = true }
-solana-runtime = { workspace = true, features = ["dev-context-only-utils"] }
-solana-sdk = { workspace = true }
-solana-stake-program = { workspace = true }
-solana-storage-bigtable = { workspace = true }
-solana-streamer = { workspace = true }
-solana-transaction-status = { workspace = true }
-solana-unified-scheduler-pool = { workspace = true }
-solana-version = { workspace = true }
-solana-vote-program = { workspace = true }
-solana_rbpf = { workspace = true, features = ["debugger"] }
+lunul-account-decoder = { workspace = true }
+lunul-accounts-db = { workspace = true }
+lunul-bpf-loader-program = { workspace = true }
+lunul-clap-utils = { workspace = true }
+lunul-cli-output = { workspace = true }
+lunul-core = { workspace = true }
+lunul-cost-model = { workspace = true }
+lunul-entry = { workspace = true }
+lunul-geyser-plugin-manager = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-ledger = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-program-runtime = { workspace = true }
+lunul-rpc = { workspace = true }
+lunul-runtime = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-sdk = { workspace = true }
+lunul-stake-program = { workspace = true }
+lunul-storage-bigtable = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-transaction-status = { workspace = true }
+lunul-unified-scheduler-pool = { workspace = true }
+lunul-version = { workspace = true }
+lunul-vote-program = { workspace = true }
+lunul_rbpf = { workspace = true, features = ["debugger"] }
 thiserror = { workspace = true }
 tokio = { workspace = true, features = ["full"] }
 

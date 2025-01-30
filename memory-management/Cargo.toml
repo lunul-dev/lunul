@@ -1,5 +1,5 @@
 [package]
-name = "solana-memory-management"
+name = "lunul-memory-management"
 description = "Solana memory management"
 version = { workspace = true }
 authors = { workspace = true }

@@ -1,10 +1,10 @@
 //! Calculation of [shred] versions.
 //!
-//! [shred]: https://solana.com/docs/terminology#shred
+//! [shred]: https://lunul.com/docs/terminology#shred
 
 #![cfg(feature = "full")]
 
-use solana_sdk::{
+use lunul_sdk::{
     hard_forks::HardForks,
     hash::{extend_and_hash, Hash},
 };

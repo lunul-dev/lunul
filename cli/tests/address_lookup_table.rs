@@ -1,20 +1,20 @@
 use {
-    solana_cli::{
+    lunul_cli::{
         address_lookup_table::{
             AddressLookupTableCliCommand, DEACTIVATE_LOOKUP_TABLE_WARNING,
             FREEZE_LOOKUP_TABLE_WARNING,
         },
         cli::{process_command, CliCommand, CliConfig},
     },
-    solana_cli_output::{CliAddressLookupTable, CliAddressLookupTableCreated, OutputFormat},
-    solana_faucet::faucet::run_local_faucet,
-    solana_sdk::{
+    lunul_cli_output::{CliAddressLookupTable, CliAddressLookupTableCreated, OutputFormat},
+    lunul_faucet::faucet::run_local_faucet,
+    lunul_sdk::{
         native_token::LAMPORTS_PER_SOL,
         pubkey::Pubkey,
         signature::{Keypair, Signer},
     },
-    solana_streamer::socket::SocketAddrSpace,
-    solana_test_validator::TestValidator,
+    lunul_streamer::socket::SocketAddrSpace,
+    lunul_test_validator::TestValidator,
     std::str::FromStr,
 };
 

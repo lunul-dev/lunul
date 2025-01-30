@@ -7,7 +7,7 @@
 //!
 //! [`legacy`]: crate::message::legacy
 //! [`v0`]: crate::message::v0
-//! [future message format]: https://docs.solanalabs.com/proposals/versioned-transactions
+//! [future message format]: https://docs.lunullabs.com/proposals/versioned-transactions
 
 use crate::{
     address_lookup_table_account::AddressLookupTableAccount,
@@ -179,23 +179,23 @@ impl Message {
     ///
     /// # Examples
     ///
-    /// This example uses the [`solana_rpc_client`], [`solana_sdk`], and [`anyhow`] crates.
+    /// This example uses the [`lunul_rpc_client`], [`lunul_sdk`], and [`anyhow`] crates.
     ///
-    /// [`solana_rpc_client`]: https://docs.rs/solana-rpc-client
-    /// [`solana_sdk`]: https://docs.rs/solana-sdk
+    /// [`lunul_rpc_client`]: https://docs.rs/lunul-rpc-client
+    /// [`lunul_sdk`]: https://docs.rs/lunul-sdk
     /// [`anyhow`]: https://docs.rs/anyhow
     ///
     /// ```
-    /// # use solana_program::example_mocks::{
-    /// #     solana_rpc_client,
-    /// #     solana_sdk,
+    /// # use lunul_program::example_mocks::{
+    /// #     lunul_rpc_client,
+    /// #     lunul_sdk,
     /// # };
     /// # use std::borrow::Cow;
-    /// # use solana_sdk::account::Account;
+    /// # use lunul_sdk::account::Account;
     /// use anyhow::Result;
-    /// use solana_rpc_client::rpc_client::RpcClient;
-    /// use solana_program::address_lookup_table::{self, state::{AddressLookupTable, LookupTableMeta}};
-    /// use solana_sdk::{
+    /// use lunul_rpc_client::rpc_client::RpcClient;
+    /// use lunul_program::address_lookup_table::{self, state::{AddressLookupTable, LookupTableMeta}};
+    /// use lunul_sdk::{
     ///      address_lookup_table_account::AddressLookupTableAccount,
     ///      instruction::{AccountMeta, Instruction},
     ///      message::{VersionedMessage, v0},

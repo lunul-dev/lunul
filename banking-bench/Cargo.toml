@@ -1,5 +1,5 @@
 [package]
-name = "solana-banking-bench"
+name = "lunul-banking-bench"
 publish = false
 version = { workspace = true }
 authors = { workspace = true }
@@ -14,19 +14,19 @@ crossbeam-channel = { workspace = true }
 log = { workspace = true }
 rand = { workspace = true }
 rayon = { workspace = true }
-solana-client = { workspace = true }
-solana-core = { workspace = true }
-solana-gossip = { workspace = true }
-solana-ledger = { workspace = true }
-solana-logger = { workspace = true }
-solana-measure = { workspace = true }
-solana-perf = { workspace = true }
-solana-poh = { workspace = true, features = ["dev-context-only-utils"] }
-solana-runtime = { workspace = true, features = ["dev-context-only-utils"] }
-solana-sdk = { workspace = true }
-solana-streamer = { workspace = true }
-solana-tpu-client = { workspace = true }
-solana-version = { workspace = true }
+lunul-client = { workspace = true }
+lunul-core = { workspace = true }
+lunul-gossip = { workspace = true }
+lunul-ledger = { workspace = true }
+lunul-logger = { workspace = true }
+lunul-measure = { workspace = true }
+lunul-perf = { workspace = true }
+lunul-poh = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-runtime = { workspace = true, features = ["dev-context-only-utils"] }
+lunul-sdk = { workspace = true }
+lunul-streamer = { workspace = true }
+lunul-tpu-client = { workspace = true }
+lunul-version = { workspace = true }
 
 [features]
 dev-context-only-utils = []

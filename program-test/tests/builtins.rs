@@ -1,6 +1,6 @@
 use {
-    solana_program_test::ProgramTest,
-    solana_sdk::{
+    lunul_program_test::ProgramTest,
+    lunul_sdk::{
         bpf_loader_upgradeable::{self, UpgradeableLoaderState},
         message::{v0::Message, VersionedMessage},
         pubkey::Pubkey,
