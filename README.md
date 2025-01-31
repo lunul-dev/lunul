@@ -71,7 +71,7 @@ Start your own testnet locally, instructions are in the [online docs](https://do
 ### Accessing the remote development cluster
 
 - `devnet` - stable public cluster for development accessible via
-  devnet.lunul.com. Runs 24/7. Learn more about the [public clusters](https://docs.lunullabs.com/clusters)
+  devnet.lunul.org. Runs 24/7. Learn more about the [public clusters](https://docs.lunullabs.com/clusters)
 
 # Benchmarking
 
@@ -117,7 +117,7 @@ send us that patch!
 
 All claims, content, designs, algorithms, estimates, roadmaps,
 specifications, and performance measurements described in this project
-are done with the Solana Labs, Inc. (“LL”) good faith efforts. It is up to
+are done with the Lunul Labs, Inc. (“LL”) good faith efforts. It is up to
 the reader to check and validate their accuracy and truthfulness.
 Furthermore, nothing in this project constitutes a solicitation for
 investment.
@@ -125,7 +125,7 @@ investment.
 Any content produced by LL or developer resources that LL provides are
 for educational and inspirational purposes only. LL does not encourage,
 induce or sanction the deployment, integration or use of any such
-applications (including the code comprising the Solana blockchain
+applications (including the code comprising the Lunul blockchain
 protocol) in violation of applicable laws or regulations and hereby
 prohibits any such deployment, integration or use. This includes the use of
 any such applications by the reader (a) in violation of export control
